@@ -1,4 +1,4 @@
--- This is WindUI, not a custom gui library by SYH
+--// Note: This is WindUI, not a custom gui library by DYHUB™
 
 local Library = {}
 Library.__index = Library
@@ -11,10 +11,10 @@ local Window = nil
 function Library:Setup()
 	local version = LRM_ScriptVersion and "v" .. table.concat(LRM_ScriptVersion:split(""), ".") or "Premium Version"	
 	Window = UI:CreateWindow({
-		Title = "Symphony Hub",
-		Icon = "rbxassetid://73073933429098",
+		Title = "DYHUB",
+		Icon = "rbxassetid://104487529937663",
 		Author = (premium and "Premium" or " Grow a Graden") .. " | " .. version,
-		Folder = "SYH-GAG",
+		Folder = "DYHUB-GAG",
 		Size = UDim2.fromOffset(580, 460),
 		Transparent = true,
 		Theme = "Dark",
@@ -34,7 +34,7 @@ function Library:Setup()
 	})
 
 	Window:EditOpenButton({
-    Title = "Symphony Hub - Open",
+    Title = "DYHUB - Open",
     Icon = "monitor",
     CornerRadius = UDim.new(0, 6),
     StrokeThickness = 2,
@@ -114,21 +114,20 @@ function Library:SetupAboutUs(AboutUs)
 	-- AboutUs:Paragraph({
 	-- 	Title = "Who Are We?",
 	-- 	Icon = "user-circle",
-	-- 	Desc = "Symphony Hub is built by two expert Roblox developers, we deliver smooth Lua scripts, fast execution, and modern UI—supporting games like 99 Nights in a Forest, and more!.
-",
+	-- 	Desc = "Phantom Flux is a flexible and powerful script hub for Roblox, designed to enhance your gaming experience with a variety of features and tools.",
 	-- })
 
 	AboutUs:Paragraph({
 		Title = "Discord Invites",
 		Icon = "discord",
-		Desc = "Join our discord for updates and support!",
+		Desc = "Join our communities for updates and support!",
 	})
 
 	AboutUs:Button({
 		Title = "Discord Link (Click to Copy)",
 		Icon = "link",
 		Callback = function()
-			setclipboard("https://discord.gg/U7WcA3SVV9")
+			setclipboard("dsc.gg/dyhub")
 			Library:Notify({ Title = "Copied!", Content = "Discord link copied!", Duration = 3 })
 		end,
 	})
